@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap'); /* Import Lato font */
+
 /* Basic Reset & Body Styles */
 * {
     box-sizing: border-box;
@@ -5,28 +7,77 @@
     padding: 0;
 }
 
+html { /* Apply page background here */
+    background-color: #f4f7f6; /* Light grey/greenish background */
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use Lato first */
+    line-height: 1.7; /* Slightly increase line height for better readability */
     color: #333;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; Removed, now set on html */
     max-width: 1000px; /* Limit content width */
-    margin: 20px auto; /* Center content */
-    padding: 20px;
-    border: 1px solid #eee;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-    background-color: #fff;
+    margin: 30px auto; /* Center content, increased top/bottom margin */
+    padding: 30px; /* Increased padding inside the content box */
+    border: 1px solid #ddd; /* Slightly darker border for content box */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08); /* Slightly enhanced shadow */
+    background-color: #fff; /* White background for the content box */
+    font-size: 17px; /* Base font size */
 }
 
 /* Header Styles */
 header {
     border-bottom: 2px solid #eee;
-    padding-bottom: 20px;
+    padding-bottom: 10px; /* Adjusted padding */
     margin-bottom: 30px;
-    /* Flexbox for photo and text side-by-side */
-    display: flex;
-    flex-wrap: wrap; /* Allow wrapping on small screens */
-    gap: 20px; /* Space between items */
+    display: flex; /* Use flexbox for header content */
+    flex-direction: column; /* Stack nav on top */
+    align-items: center; /* Center nav */
+}
+
+/* Navigation Styles */
+.main-nav {
+    width: 100%; /* Make nav take full width */
+    background-color: #f8f9fa; /* Light background for nav */
+    padding: 10px 0; /* Padding top/bottom */
+    /* margin-bottom: 20px; Removed, spacing handled by header margin */
+    border-radius: 5px; /* Slightly rounded corners */
+}
+
+.main-nav ul {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange items horizontally */
+    justify-content: center; /* Center items */
+    gap: 20px; /* Space between nav items */
+}
+
+.main-nav li {
+    margin: 0; /* Remove default li margin */
+}
+
+.main-nav a {
+    text-decoration: none; /* Remove underline */
+    color: #1a73e8; /* Link color */
+    padding: 8px 15px; /* Padding around links */
+    border-radius: 4px; /* Rounded corners for links */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+    font-weight: 600; /* Slightly bolder nav links */
+}
+
+.main-nav a:hover,
+.main-nav a:focus { /* Add focus state for accessibility */
+    background-color: #e7f3ff; /* Light blue background on hover/focus */
+    color: #0f4fa8; /* Darker blue text on hover/focus */
+}
+
+/* Personal Info Section Styles (Adjust if needed after moving from header) */
+#about {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px; /* Space between content and contact info */
+    margin-bottom: 40px; /* Keep consistent section spacing */
 }
 
 .header-content {
@@ -48,6 +99,7 @@ header {
 .header-text h1 {
     margin-bottom: 5px;
     color: #1a73e8; /* Accent color */
+    font-weight: 700; /* Make main title bolder */
 }
 
 .header-text h2 {
@@ -69,6 +121,8 @@ header {
     padding: 15px;
     border-radius: 8px;
     font-size: 0.9em;
+    /* Remove margin-top if it was added for small screens */
+    margin-top: 0;
 }
 
 .contact-info ul {
@@ -88,7 +142,6 @@ header {
     text-decoration: underline;
 }
 
-
 /* Main Content Sections */
 main {
     padding: 0 10px; /* Add slight padding */
@@ -104,12 +157,15 @@ h2 { /* Section Titles */
     padding-bottom: 5px;
     margin-bottom: 20px;
     font-size: 1.6em;
+    font-weight: 700; /* Bolder section titles */
 }
 
 h3 { /* Sub-section Titles (like Education/Project Titles) */
     color: #333;
     margin-bottom: 10px;
     font-size: 1.3em;
+    font-weight: 700; /* Bolder sub-section titles */
+    margin-top: 20px; /* Add more space above h3 */
 }
 
 h4 { /* Category Titles (like Skills/Modules) */
@@ -117,11 +173,11 @@ h4 { /* Category Titles (like Skills/Modules) */
     margin-top: 15px;
     margin-bottom: 5px;
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 700; /* Bolder category titles */
 }
 
 p, li {
-    margin-bottom: 10px;
+    margin-bottom: 12px; /* Slightly increase paragraph/list item spacing */
     color: #444;
 }
 
@@ -141,7 +197,6 @@ a {
 a:hover {
     color: #0f4fa8;
 }
-
 
 /* Specific Section Styles */
 
@@ -197,7 +252,6 @@ a:hover {
     font-weight: normal;
 }
 
-
 /* Languages */
 #languages p {
     margin-bottom: 5px;
@@ -212,7 +266,6 @@ footer {
     font-size: 0.9em;
     color: #777;
 }
-
 
 /* Responsive Adjustments (Example) */
 @media (max-width: 768px) {
