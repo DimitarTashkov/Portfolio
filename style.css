@@ -1,0 +1,264 @@
+/* Basic Reset & Body Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    max-width: 1000px; /* Limit content width */
+    margin: 20px auto; /* Center content */
+    padding: 20px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+}
+
+/* Header Styles */
+header {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    /* Flexbox for photo and text side-by-side */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    gap: 20px; /* Space between items */
+}
+
+.header-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px;
+    flex: 3; /* Allow text content to take more space */
+    min-width: 300px; /* Prevent text from getting too squished */
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure image covers the area */
+    border: 3px solid #eee;
+}
+
+.header-text h1 {
+    margin-bottom: 5px;
+    color: #1a73e8; /* Accent color */
+}
+
+.header-text h2 {
+    margin-bottom: 10px;
+    font-weight: normal;
+    color: #555;
+    font-size: 1.2em;
+}
+
+.summary {
+    font-size: 0.95em;
+    color: #444;
+}
+
+.contact-info {
+    flex: 1; /* Allow contact info to take remaining space */
+    min-width: 250px; /* Ensure minimum width */
+    background-color: #f0f8ff; /* Light blue background */
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 0.9em;
+}
+
+.contact-info ul {
+    list-style: none;
+}
+
+.contact-info li {
+    margin-bottom: 8px;
+}
+
+.contact-info a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+/* Main Content Sections */
+main {
+    padding: 0 10px; /* Add slight padding */
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 { /* Section Titles */
+    color: #1a73e8;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
+
+h3 { /* Sub-section Titles (like Education/Project Titles) */
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+h4 { /* Category Titles (like Skills/Modules) */
+    color: #555;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+p, li {
+    margin-bottom: 10px;
+    color: #444;
+}
+
+ul {
+    list-style-position: inside; /* Indent bullets */
+    padding-left: 10px; /* Add some padding for lists */
+}
+
+strong {
+    font-weight: 600; /* Slightly bolder */
+}
+
+a {
+    color: #1a73e8;
+}
+
+a:hover {
+    color: #0f4fa8;
+}
+
+
+/* Specific Section Styles */
+
+/* Skills */
+#skills .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 30px;
+}
+
+.soft-skills {
+    list-style: none;
+    padding-left: 0;
+}
+
+.soft-skills li {
+    display: inline-block; /* Make them look like tags */
+    background-color: #e7f3ff;
+    color: #1a73e8;
+    padding: 5px 12px;
+    border-radius: 15px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+/* Education & Projects */
+.education-entry, .project-entry {
+    margin-bottom: 25px;
+    padding-left: 15px;
+    border-left: 3px solid #e0e0e0; /* Add a visual separator */
+}
+
+.institution, .project-dates {
+    font-style: italic;
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 10px;
+}
+.project-link {
+    font-size: 0.8em;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #1a73e8;
+    font-weight: normal;
+    vertical-align: middle;
+}
+.project-link:hover {
+    text-decoration: underline;
+}
+.project-dates {
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+
+/* Languages */
+#languages p {
+    margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 0.9em;
+    color: #777;
+}
+
+
+/* Responsive Adjustments (Example) */
+@media (max-width: 768px) {
+    body {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    header {
+        flex-direction: column; /* Stack header items vertically */
+        align-items: center; /* Center items when stacked */
+        text-align: center;
+    }
+
+    .header-content {
+        flex-direction: column; /* Stack photo and text */
+        align-items: center;
+        text-align: center;
+    }
+
+    .contact-info {
+        width: 100%; /* Full width on small screens */
+        margin-top: 15px;
+        text-align: left; /* Keep contact text left-aligned */
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+     h1 {
+        font-size: 1.6em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    .skills-grid {
+        grid-template-columns: 1fr; /* Single column grid */
+    }
+}
