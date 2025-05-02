@@ -341,4 +341,5 @@ footer {
     .education-entry, .project-entry {
         padding-left: 10px; /* Reduce padding */
     }
+    /* Adjust font sizes for smaller screens */
 }
