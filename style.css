@@ -112,7 +112,6 @@ header {
     flex: 1; 
     min-width: 250px; 
     background-color: #f0f8ff; 
-    padding: 15px;
     border-radius: 8px;
     font-size: 0.9em;
     margin-top: 0;
@@ -131,7 +130,7 @@ header {
     text-decoration: none;
 }
 
-.contact-info a:hover {
+contact-info a:hover {
     text-decoration: underline;
 }
 
@@ -257,46 +256,89 @@ footer {
     body {
         margin: 10px;
         padding: 15px;
+        font-size: 16px; /* Slightly reduce base font size */
     }
 
     header {
         flex-direction: column; 
         align-items: center; 
         text-align: center;
+        margin-bottom: 20px; /* Reduce margin */
+    }
+
+    .main-nav ul {
+        gap: 10px; /* Reduce gap between nav items */
+        flex-wrap: wrap; /* Allow nav items to wrap */
+        justify-content: center; /* Keep items centered */
+    }
+
+    #about {
+        gap: 15px; /* Reduce gap in about section */
+        flex-direction: column; /* Stack children vertically */
+        align-items: center; /* Center items now that it's a column */
     }
 
     .header-content {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         text-align: center;
+        min-width: auto; /* Remove min-width */
+        width: 100%; /* Ensure it takes full width */
     }
 
     .contact-info {
-        width: 100%; 
+        width: 100%;
         margin-top: 15px;
-        text-align: left; 
+        text-align: left;
+        min-width: auto; /* Remove min-width */
     }
 
     h1 {
         font-size: 1.8em;
     }
-    h2 {
+    h2 { /* Section titles */
         font-size: 1.4em;
+    }
+    h3 { /* Sub-section titles */
+        font-size: 1.2em;
     }
 }
 
 @media (max-width: 480px) {
+    body {
+        padding: 10px; /* Further reduce padding */
+        font-size: 15px; /* Further reduce base font size */
+    }
+
+    .main-nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center stacked items */
+        gap: 5px; /* Reduce gap for vertical stack */
+    }
+
+    .main-nav a {
+        padding: 6px 10px; /* Slightly reduce nav link padding */
+    }
+
     .profile-pic {
-        width: 120px; 
-        height: 120px;
+        width: 100px; /* Make picture smaller */
+        height: 100px;
     }
      h1 {
         font-size: 1.6em;
     }
-    h2 {
-        font-size: 1.2em;
+    h2 { /* Section titles */
+        font-size: 1.3em;
+    }
+    h3 { /* Sub-section titles */
+        font-size: 1.1em;
     }
     .skills-grid {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr; /* Already set, but good to confirm */
+        gap: 15px; /* Reduce gap in skills grid */
+    }
+
+    .education-entry, .project-entry {
+        padding-left: 10px; /* Reduce padding */
     }
 }
