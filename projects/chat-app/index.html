@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat App — SAP Mentorship — Dimitar Tashkov</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>DT</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../../index.html" class="nav-logo">DT</a>
+      <div class="nav-links">
+        <a href="../../index.html#about">About</a>
+        <a href="../../index.html#skills">Skills</a>
+        <a href="../../projects.html">Projects</a>
+        <a href="../../index.html#freelance">Freelance</a>
+        <a href="../../index.html#education">Education</a>
+        <a href="../../index.html#contact">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../../index.html#about">About</a>
+    <a href="../../index.html#skills">Skills</a>
+    <a href="../../projects.html">Projects</a>
+    <a href="../../index.html#freelance">Freelance</a>
+    <a href="../../index.html#education">Education</a>
+    <a href="../../index.html#contact">Contact</a>
+  </div>
+
+  <main class="container">
+    <div class="project-header">
+      <a href="../../projects.html" class="back-link">← Back to Projects</a>
+      <div class="card-badges">
+        <span class="badge badge-live">LIVE</span>
+        <span class="badge badge-category">Web</span>
+      </div>
+      <h1>Chat App — SAP Mentorship</h1>
+      <p class="description">Real-time chat platform with public/private rooms, friend system, DMs, and online presence tracking. Built during SAP Mentorship Program.</p>
+      <div class="card-actions">
+        <a href="https://github.com/DimitarTashkov/Chat-App-SAP" class="btn-primary" target="_blank" rel="noopener">Repository</a>
+        <a href="https://chat-app-267e7.web.app" class="btn-primary" target="_blank" rel="noopener">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-main">
+        <button class="gallery-arrow gallery-prev">&#8249;</button>
+        <div class="gallery-viewport"></div>
+        <button class="gallery-arrow gallery-next">&#8250;</button>
+      </div>
+      <div class="gallery-dots"></div>
+    </div>
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close">&times;</button>
+      <img src="" alt="" class="lightbox-image">
+    </div>
+
+    <div class="project-tags-section">
+      <h2 class="project-section-title">Tech Stack</h2>
+      <div class="card-tags">
+        <span class="tag">JavaScript</span>
+        <span class="tag">Firebase</span>
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="project-section-title">About This Project</h2>
+      <div class="readme-content" id="readme-content"></div>
+    </div>
+  </main>
+
+  <footer class="footer" style="margin-top:60px;">
+    <p>&copy; <span id="year"></span> Dimitar Tashkov</p>
+    <p>Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <script>
+    window.galleryImages = [
+      'media/screenshot_login_1773095333523.png',
+      'media/screenshot_dashboard_1773095407704.png',
+      'media/screenshot_chat_1773095426958.png',
+      'media/screenshot_friends_1773095459526.png',
+      'media/screenshot_settings_1773095479960.png',
+      'media/screenshot_create_room_1773095507134.png',
+      'media/login.png',
+      'media/dashboard_rooms_test_1773092793216.webp',
+      'media/browse_rooms_modal_1773093310522.png',
+      'media/general_chat_room_messages_1773093424045.png',
+      'media/friends_list_showing_testuser1_1773093443185.png',
+      'media/app_demo_clean_1773094435078.webp'
+    ];
+    window.readmePath = 'information.md';
+  </script>
+  <script src="../../script.js"></script>
+</body>
+</html>

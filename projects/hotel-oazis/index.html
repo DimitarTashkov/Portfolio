@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Oazis — Dimitar Tashkov</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>DT</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../../index.html" class="nav-logo">DT</a>
+      <div class="nav-links">
+        <a href="../../index.html#about">About</a>
+        <a href="../../index.html#skills">Skills</a>
+        <a href="../../projects.html">Projects</a>
+        <a href="../../index.html#freelance">Freelance</a>
+        <a href="../../index.html#education">Education</a>
+        <a href="../../index.html#contact">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../../index.html#about">About</a>
+    <a href="../../index.html#skills">Skills</a>
+    <a href="../../projects.html">Projects</a>
+    <a href="../../index.html#freelance">Freelance</a>
+    <a href="../../index.html#education">Education</a>
+    <a href="../../index.html#contact">Contact</a>
+  </div>
+
+  <main class="container">
+    <div class="project-header">
+      <a href="../../projects.html" class="back-link">← Back to Projects</a>
+      <div class="card-badges">
+        <span class="badge badge-category">WinForms</span>
+      </div>
+      <h1>Hotel Oazis</h1>
+      <p class="description">Desktop hotel management system with room CRUD, reservations, and admin dashboard. Graduation project.</p>
+      <div class="card-actions">
+        <a href="https://github.com/DimitarTashkov/Hotel-Oazis" class="btn-primary" target="_blank" rel="noopener">Repository</a>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-main">
+        <button class="gallery-arrow gallery-prev">&#8249;</button>
+        <div class="gallery-viewport"></div>
+        <button class="gallery-arrow gallery-next">&#8250;</button>
+      </div>
+      <div class="gallery-dots"></div>
+    </div>
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close">&times;</button>
+      <img src="" alt="" class="lightbox-image">
+    </div>
+
+    <div class="project-tags-section">
+      <h2 class="project-section-title">Tech Stack</h2>
+      <div class="card-tags">
+        <span class="tag">C#</span>
+        <span class="tag">WinForms</span>
+        <span class="tag">EF Core</span>
+        <span class="tag">SQL Server</span>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="project-section-title">About This Project</h2>
+      <div class="readme-content" id="readme-content"></div>
+    </div>
+  </main>
+
+  <footer class="footer" style="margin-top:60px;">
+    <p>&copy; <span id="year"></span> Dimitar Tashkov</p>
+    <p>Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <script>
+    window.galleryImages = [
+      'media/image2.png',
+      'media/image3.png',
+      'media/image4.png',
+      'media/image5.png',
+      'media/image6.png',
+      'media/image7.png',
+      'media/image8.png',
+      'media/image9.png',
+      'media/image10.png',
+      'media/image11.png',
+      'media/image12.png',
+      'media/image13.png',
+      'media/image14.png',
+      'media/image15.png',
+      'media/image16.png',
+      'media/image17.png',
+      'media/image18.png',
+      'media/image19.png',
+      'media/image20.png',
+      'media/image21.png',
+      'media/image22.png'
+    ];
+    window.readmePath = 'information.md';
+  </script>
+  <script src="../../script.js"></script>
+</body>
+</html>

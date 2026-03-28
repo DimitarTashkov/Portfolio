@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZooZen — Dimitar Tashkov</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>DT</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../../index.html" class="nav-logo">DT</a>
+      <div class="nav-links">
+        <a href="../../index.html#about">About</a>
+        <a href="../../index.html#skills">Skills</a>
+        <a href="../../projects.html">Projects</a>
+        <a href="../../index.html#freelance">Freelance</a>
+        <a href="../../index.html#education">Education</a>
+        <a href="../../index.html#contact">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../../index.html#about">About</a>
+    <a href="../../index.html#skills">Skills</a>
+    <a href="../../projects.html">Projects</a>
+    <a href="../../index.html#freelance">Freelance</a>
+    <a href="../../index.html#education">Education</a>
+    <a href="../../index.html#contact">Contact</a>
+  </div>
+
+  <main class="container">
+    <div class="project-header">
+      <a href="../../projects.html" class="back-link">&larr; Back to Projects</a>
+      <div class="card-badges">
+        <span class="badge badge-category">WinForms</span>
+      </div>
+      <h1>ZooZen</h1>
+      <p class="description">Pet shop desktop management application. Product catalog, shopping cart, checkout with promo codes, invoice generation, admin panel.</p>
+      <div class="card-actions">
+        <a href="https://github.com/DimitarTashkov/ZooZen" class="btn-primary" target="_blank" rel="noopener">Repository</a>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-main">
+        <button class="gallery-arrow gallery-prev">&lsaquo;</button>
+        <div class="gallery-viewport"></div>
+        <button class="gallery-arrow gallery-next">&rsaquo;</button>
+      </div>
+      <div class="gallery-dots"></div>
+    </div>
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close">&times;</button>
+      <img src="" alt="" class="lightbox-image">
+    </div>
+
+    <div class="project-tags-section">
+      <h2 class="project-section-title">Tech Stack</h2>
+      <div class="card-tags">
+        <span class="tag">C#</span>
+        <span class="tag">.NET 8</span>
+        <span class="tag">WinForms</span>
+        <span class="tag">EF Core</span>
+        <span class="tag">SQL Server</span>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="project-section-title">About This Project</h2>
+      <div class="readme-content" id="readme-content"></div>
+    </div>
+  </main>
+
+  <footer class="footer" style="margin-top:60px;">
+    <p>&copy; <span id="year"></span> Dimitar Tashkov</p>
+    <p>Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script>
+    window.galleryImages = [
+      'media/home page img1.png',
+      'media/login form.png',
+      'media/register form.png',
+      'media/catalog form.png',
+      'media/product management form.png',
+      'media/checkout form.png',
+      'media/receipt image.png',
+      'media/orders form.png',
+      'media/profile form.png',
+      'media/users form.png',
+      'media/about us form.png',
+      'media/contact us form.png',
+      'media/promotions form.png',
+      'media/db-diagram.png'
+    ];
+    window.readmePath = 'information.md';
+  </script>
+  <script src="../../script.js"></script>
+</body>
+</html>

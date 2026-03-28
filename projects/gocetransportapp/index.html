@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goce Delchev Transport System — Dimitar Tashkov</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>DT</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../../index.html" class="nav-logo">DT</a>
+      <div class="nav-links">
+        <a href="../../index.html#about">About</a>
+        <a href="../../index.html#skills">Skills</a>
+        <a href="../../projects.html">Projects</a>
+        <a href="../../index.html#freelance">Freelance</a>
+        <a href="../../index.html#education">Education</a>
+        <a href="../../index.html#contact">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../../index.html#about">About</a>
+    <a href="../../index.html#skills">Skills</a>
+    <a href="../../projects.html">Projects</a>
+    <a href="../../index.html#freelance">Freelance</a>
+    <a href="../../index.html#education">Education</a>
+    <a href="../../index.html#contact">Contact</a>
+  </div>
+
+  <main class="container">
+    <div class="project-header">
+      <a href="../../projects.html" class="back-link">← Back to Projects</a>
+      <div class="card-badges">
+        <span class="badge badge-live">LIVE</span>
+        <span class="badge badge-category">Web</span>
+      </div>
+      <h1>Goce Delchev Transport System</h1>
+      <p class="description">Full-stack web app digitizing local bus transport. Organization management, routes, schedules, tickets, role-based auth.</p>
+      <div class="card-actions">
+        <a href="https://github.com/DimitarTashkov/GoceTransportApp" class="btn-primary" target="_blank" rel="noopener">Repository</a>
+        <a href="https://gocetransport.azurewebsites.net/" class="btn-primary" target="_blank" rel="noopener">Live Demo</a>
+      </div>
+    </div>
+
+    <div class="project-tags-section">
+      <h2 class="project-section-title">Tech Stack</h2>
+      <div class="card-tags">
+        <span class="tag">ASP.NET Core 8</span>
+        <span class="tag">EF Core</span>
+        <span class="tag">SQL Server</span>
+        <span class="tag">Blazor</span>
+        <span class="tag">Docker</span>
+        <span class="tag">Azure</span>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="project-section-title">About This Project</h2>
+      <div class="readme-content" id="readme-content"></div>
+    </div>
+  </main>
+
+  <footer class="footer" style="margin-top:60px;">
+    <p>&copy; <span id="year"></span> Dimitar Tashkov</p>
+    <p>Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <script>
+    window.galleryImages = [];
+    window.readmePath = 'information.md';
+  </script>
+  <script src="../../script.js"></script>
+</body>
+</html>

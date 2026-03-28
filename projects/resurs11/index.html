@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resurs-11 — Dimitar Tashkov</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>DT</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="../../index.html" class="nav-logo">DT</a>
+      <div class="nav-links">
+        <a href="../../index.html#about">About</a>
+        <a href="../../index.html#skills">Skills</a>
+        <a href="../../projects.html">Projects</a>
+        <a href="../../index.html#freelance">Freelance</a>
+        <a href="../../index.html#education">Education</a>
+        <a href="../../index.html#contact">Contact</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="../../index.html#about">About</a>
+    <a href="../../index.html#skills">Skills</a>
+    <a href="../../projects.html">Projects</a>
+    <a href="../../index.html#freelance">Freelance</a>
+    <a href="../../index.html#education">Education</a>
+    <a href="../../index.html#contact">Contact</a>
+  </div>
+
+  <main class="container">
+    <div class="project-header">
+      <a href="../../projects.html" class="back-link">&larr; Back to Projects</a>
+      <div class="card-badges">
+        <span class="badge badge-live">LIVE</span>
+        <span class="badge badge-category">Web (WordPress)</span>
+        <span class="badge badge-category">HTML</span>
+        <span class="badge badge-category">CSS</span>
+      </div>
+      <h1>Resurs-11</h1>
+      <p class="description">Custom WordPress website for a local fuel delivery business in Sofia, Bulgaria. Product catalog, gallery, SEO optimized, responsive design.</p>
+      <div class="card-actions">
+        <a href="https://resurs11.com" class="btn-primary" target="_blank" rel="noopener">Live Site</a>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="gallery-main">
+        <button class="gallery-arrow gallery-prev">&lsaquo;</button>
+        <div class="gallery-viewport"></div>
+        <button class="gallery-arrow gallery-next">&rsaquo;</button>
+      </div>
+      <div class="gallery-dots"></div>
+    </div>
+    <div class="lightbox" id="lightbox">
+      <button class="lightbox-close">&times;</button>
+      <img src="" alt="" class="lightbox-image">
+    </div>
+
+    <div class="project-tags-section">
+      <h2 class="project-section-title">Tech Stack</h2>
+      <div class="card-tags">
+        <span class="tag">WordPress</span>
+        <span class="tag">PHP</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">ACF</span>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="project-section-title">About This Project</h2>
+      <div class="readme-content" id="readme-content"></div>
+    </div>
+  </main>
+
+  <footer class="footer" style="margin-top:60px;">
+    <p>&copy; <span id="year"></span> Dimitar Tashkov</p>
+    <p>Built with HTML, CSS & JavaScript</p>
+  </footer>
+
+  <script>
+    window.galleryImages = [
+      'media/scene1_homepage_desktop.webp',
+      'media/scene2_products_desktop.webp',
+      'media/scene3_mobile_ux.webp',
+      'media/scene4_gallery.webp',
+      'media/scene5_contacts.webp'
+    ];
+    window.readmePath = 'information.md';
+  </script>
+  <script src="../../script.js"></script>
+</body>
+</html>
