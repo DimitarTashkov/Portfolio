@@ -16,8 +16,6 @@
 
 ---
 
-> [!IMPORTANT]
-> 🚧 **This project is under active development (Work in Progress).** There is no live demo or public deployment at this time. The instructions below are intended **for local setup and testing only**. Features, UI, and data models may change without notice.
 
 ---
 
